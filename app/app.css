@@ -1,0 +1,123 @@
+/* app css stylesheet */
+body {
+	background-color: black !important;
+	font-family: 'Titillium Web', sans-serif !important;
+	color: white;
+	margin: auto;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+#header {
+	padding-top: 10px;
+	font-size: 30pt;
+	font-weight: 400; 
+	color: #FFFFFF;
+	height: 92px;
+	position: fixed;
+	background-color: black;
+	width: 100%;
+}
+#genre-info {
+	margin-left: 20px;
+	text-align: left;
+	float: left;
+}
+.search-button {
+	float: right;	 
+	padding-top: 18px;
+	margin-right: 10px;
+	font-size: 28px; 
+	cursor: pointer;
+}
+.back-button {
+	margin-left: 10px;
+	padding-top: 18px;
+	float: left;
+	font-size: 20pt;
+}
+#container {
+	margin: auto;
+	padding-top: 92px;
+}
+section {
+	width: 29%;
+	float: left;
+	margin-left: 15px;
+	height: 180px;
+	margin-bottom: 30px;
+}
+.caption {
+	vertical-align: baseline;
+	font-size: 15pt;
+}
+img {
+  width: 100%;
+  height: 100%;
+  /*object-fit: contain;*/
+}
+video {
+	width: 100%;
+  height: 100%;	
+}
+.image {
+  height: 90%;
+  width: 100%;
+  text-align: left;
+}
+input[type=search] {
+	background: #ededed url(images/search.png) no-repeat 9px center;
+	background-size: 30px 30px;
+	border: none;
+	width: 50px;
+	padding-top: 10px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	background-color: transparent;
+	top: 3;
+	position: absolute;
+	right: 0;
+}
+input[type=search]:focus {
+	width: 95%;
+	background-color: #fff;
+	padding: 1px;
+	height: 50px;
+	margin-top: 1px;
+	background-size: 10px 10px;
+	font-size: 20px;
+	border-color: #66CC75;
+	z-index: 100;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+	top: 3;
+	position: absolute;
+	right: 0;
+	margin-right: 2%;
+}
+#loading-bar .bar {
+	background: #33ba3a;
+	height: 15px;
+}

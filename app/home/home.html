@@ -1,0 +1,23 @@
+<div id='header'>
+
+	<i class="fa fa-arrow-left back-button"></i>
+
+	<div id='genre-info'>
+		{{ data.page.title }}
+	</div>
+
+	<input type='search' ng-model='search' ng-change='onSearch(search)'>
+
+</div>
+
+<div id='container' when-scrolled="loadMore()">
+	<section class='item' ng-repeat="item in data.page['content-items'].content | filter:search track by $index" scroll-load>
+		<div class='image'>
+			<!-- <img src='images/{{item["poster-image"]}}' alt="alt"> -->
+			<video poster='images/{{item["poster-image"]}}'></video>
+		</div>
+		<div class='caption'>
+			{{ item.name }}
+		</div>
+	</section>
+</div>
