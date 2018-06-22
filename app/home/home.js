@@ -8,7 +8,6 @@ angular.module('myApp').controller('homeController', (function($scope, $http, cf
 
   $scope.loadMore = function() {
   	console.log('loadMore')
-  	console.log('load ../api/CONTENTLISTINGPAGE-PAGE'+$scope.scrollLoadIdx+'.json')
     cfpLoadingBar.start();
     $http.get('../api/CONTENTLISTINGPAGE-PAGE'+$scope.scrollLoadIdx+++'.json')
 	  .then(function onSuccess(response) {

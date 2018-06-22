@@ -11,13 +11,43 @@
 </div>
 
 <div id='container' when-scrolled="loadMore()">
-	<section class='item' ng-repeat="item in data.page['content-items'].content | filter:search track by $index" scroll-load>
+	
+	<div ng-repeat="item in data.page['content-items'].content | filter:search track by $index" ng-if="$index % 3 == 0" class="row">
+    
+    <div class="col-xs-4">
+    	<div class='image'>
+				<video poster='images/{{data.page["content-items"].content[$index]["poster-image"]}}'></video>
+			</div>
+			<div class='caption'>
+				{{data.page['content-items'].content[$index].name}}
+			</div>
+    </div>
+
+    <div class="col-xs-4">
+    	<div class='image'>
+				<video poster='images/{{data.page["content-items"].content[$index + 1]["poster-image"]}}'></video>
+			</div>
+			<div class='caption'>
+				{{data.page['content-items'].content[$index + 1].name}}
+			</div>
+    </div>
+
+    <div class="col-xs-4">
+    	<div class='image'>
+				<video poster='images/{{data.page["content-items"].content[$index + 2]["poster-image"]}}'></video>
+			</div>
+			<div class='caption'>
+				{{data.page['content-items'].content[$index + 2].name}}
+			</div>
+    </div>
+  </div>
+
+	<!-- <section class='item' ng-repeat="item in data.page['content-items'].content | filter:search track by $index" scroll-load>
 		<div class='image'>
-			<!-- <img src='images/{{item["poster-image"]}}' alt="alt"> -->
 			<video poster='images/{{item["poster-image"]}}'></video>
 		</div>
 		<div class='caption'>
 			{{ item.name }}
 		</div>
-	</section>
+	</section> -->
 </div>

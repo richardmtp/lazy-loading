@@ -35,8 +35,17 @@ body {
 	color: #FFFFFF;
 	height: 92px;
 	position: fixed;
-	background-color: black;
+	background-color: black !important;
 	width: 100%;
+}
+.col-xs-4 {
+	position: inherit !important;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+
+}
+.row {
+	margin: 0 !important;
 }
 #genre-info {
 	margin-left: 20px;
@@ -84,7 +93,9 @@ video {
   height: 90%;
   width: 100%;
   text-align: left;
+  min-height: 200px;
 }
+
 input[type=search] {
 	background: #ededed url(images/search.png) no-repeat 9px center;
 	background-size: 30px 30px;
