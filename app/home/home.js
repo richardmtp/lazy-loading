@@ -50,7 +50,7 @@ angular.module('myApp')
       // bind the digest cycle to be triggered by the scroll event
       // when it exceeds a threshold
       angular.element($window).bind('scroll', function(event) {
-        if (angular.element($window)[0].scrollY >= (height)) {
+        if (angular.element($window)[0].scrollY >= (height - 360)) {
 
           // show the spinner when triggered
           //scope.spinner.hide = !scope.spinner.hide;
