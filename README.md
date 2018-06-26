@@ -11,10 +11,12 @@ How to run application?
 
 Release Notes
   * This release includes various feature:
-    * Video Listing page added - which contains a page title and a three column vertically scrolling grid which is not horizontally scrollable.
-    * Lazy loading feature implemented.
-    * Support Mobile browser / Desktop browser
+  	* Video Listing page added - which contains a page title and a three column vertically scrolling grid which is not horizontally scrollable.
+  	* Lazy loading feature implemented.
+  	* Support Mobile browser
+    * 3 x 3 grid alignment fixed.
+    * Missing poster added.
+    * Search functionality implemented (based on local loaded data)
 
   * Known issue:
-    * Autocomplete feature not implemented for search.
-    * Search not working properly.
+  	* Autocomplete feature not implemented for search.
